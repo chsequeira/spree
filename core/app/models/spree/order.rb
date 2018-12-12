@@ -134,7 +134,7 @@ module Spree
     validates :additional_tax_total, POSITIVE_MONEY_VALIDATION
     validates :payment_total,        MONEY_VALIDATION
     validates :shipment_total,       MONEY_VALIDATION
-    validates :promo_total,          NEGATIVE_MONEY_VALIDATION
+    validates :promo_total,          MONEY_VALIDATION #NEGATIVE_MONEY_VALIDATION
     validates :total,                MONEY_VALIDATION
 
     validate :has_available_shipment
